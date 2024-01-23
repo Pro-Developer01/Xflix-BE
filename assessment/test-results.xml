@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="3.739" tests="11" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-01-02T04:10:41" tests="0" file="specs/apiSpec.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Search" timestamp="2024-01-02T04:10:41" tests="11" time="3.667" failures="0">
+    <testcase name="Search POST /v1/videos - Verify expected fields are present in response on uploading videos" time="1.838" classname="POST /v1/videos - Verify expected fields are present in response on uploading videos">
+    </testcase>
+    <testcase name="Search GET /v1/videos - Verify all videos were uploaded" time="0.128" classname="GET /v1/videos - Verify all videos were uploaded">
+    </testcase>
+    <testcase name="Search GET /v1/videos?title=video18 - Verify only 1 video with title &apos;video18&apos; exists and has its genre as Education" time="0.094" classname="GET /v1/videos?title=video18 - Verify only 1 video with title &apos;video18&apos; exists and has its genre as Education">
+    </testcase>
+    <testcase name="Search GET /v1/videos?genres=Sports - Verify exactly 2 videos are available for Sports genre" time="0.108" classname="GET /v1/videos?genres=Sports - Verify exactly 2 videos are available for Sports genre">
+    </testcase>
+    <testcase name="Search GET /v1/videos?genres=Sports,Lifestyle - Verify exactly 4 videos are available for Sports/Lifestyle genres" time="0.139" classname="GET /v1/videos?genres=Sports,Lifestyle - Verify exactly 4 videos are available for Sports/Lifestyle genres">
+    </testcase>
+    <testcase name="Search GET /v1/videos?contentRating=18%2B - Verify videos are returned with contentRating set as 18+" time="0.174" classname="GET /v1/videos?contentRating=18%2B - Verify videos are returned with contentRating set as 18+">
+    </testcase>
+    <testcase name="Search GET /v1/videos?title=consumed&amp;genres=Sports,Lifestyle&amp;contentRating=12%2B - Verify exactly 4 videos are available" time="0.143" classname="GET /v1/videos?title=consumed&amp;genres=Sports,Lifestyle&amp;contentRating=12%2B - Verify exactly 4 videos are available">
+    </testcase>
+    <testcase name="Search GET /v1/videos?sortBy=releaseDate - Verify that video with title First-Video comes first when sorted by releaseDate " time="0.144" classname="GET /v1/videos?sortBy=releaseDate - Verify that video with title First-Video comes first when sorted by releaseDate ">
+    </testcase>
+    <testcase name="Search PATCH /v1/videos/:videoId/votes - Verify upvote feature works" time="0.273" classname="PATCH /v1/videos/:videoId/votes - Verify upvote feature works">
+    </testcase>
+    <testcase name="Search PATCH /v1/videos/:videoId/votes - Verify downvote feature works" time="0.199" classname="PATCH /v1/videos/:videoId/votes - Verify downvote feature works">
+    </testcase>
+    <testcase name="Search PATCH /v1/videos/:videoId/views - Verify view count is increased" time="0.173" classname="PATCH /v1/videos/:videoId/views - Verify view count is increased">
+    </testcase>
+  </testsuite>
+</testsuites>
